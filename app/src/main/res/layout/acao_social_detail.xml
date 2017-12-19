@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/acao_social_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fundo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagemAcaoSocial"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imagemAcaoSocial"
+                android:contentDescription="@null"
+                android:src="@drawable/sombra_detalhes"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/text_view_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagemAcaoSocial"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/descricaoAcaoSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_description"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+
+            <Button
+                android:id="@+id/button_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="35dp"
+                android:layout_below="@+id/descricaoAcaoSocial"
+                android:background="@drawable/havelock_blue_rounded_corners"
+                android:fontFamily="sans-serif-bold"
+                android:text="@string/acessar_site"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/custom_progress_bar" />
+
+</RelativeLayout>
